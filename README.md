@@ -4,22 +4,18 @@ Deep learning project implementing **CycleGAN** to transform landscape photograp
 
 This project explores **unpaired image-to-image translation** using Generative Adversarial Networks.
 
----
-
-# Project Overview
+## Project Overview
 
 Generative Adversarial Networks (GANs) enable the generation of realistic data by training two competing neural networks.
 
-This project uses **CycleGAN** to learn a mapping between two visual domains:
+This project uses **CycleGAN** to learn a mapping between two visual domains :
 
 - Real photographs
 - Monet-style paintings
 
 Unlike traditional supervised methods, CycleGAN does **not require paired images**, making it suitable for artistic style transfer tasks.
 
----
-
-# Tech Stack
+## Tech Stack
 
 - Python
 - TensorFlow
@@ -29,9 +25,7 @@ Unlike traditional supervised methods, CycleGAN does **not require paired images
 - GANs
 - Kaggle TPU
 
----
-
-# Model Architecture
+## Model Architecture
 
 CycleGAN consists of:
 
@@ -49,56 +43,47 @@ Training includes:
 - Cycle Consistency Loss
 - Identity Loss
 
----
-
-# Dataset
+## Dataset
 
 The model was trained on the **Monet2Photo dataset**, commonly used for image translation tasks.
 
-The dataset contains:
+The dataset contains :
 
 - Landscape photographs
 - Monet paintings
 
----
+## Results
 
-# Results
-
-Example outputs of the trained model:
+Example outputs of the trained model :
 
 ![Generated Monet style](images/results/output1.png)
 
-The model successfully generates images with:
+The model successfully generates images with :
 
 - Impressionist color palettes
 - Monet-like textures
 - Painterly brush strokes
 
-However, some limitations remain:
+However, some limitations remain :
 
 - Slight blurriness
 - Loss of fine details
 
----
+## How to Run
 
-# How to Run
+1. Create a virtual environment.
 
-1. Install dependencies
+2. Install dependencies :
 
 ```bash
 pip install -r requirements.txt
 ```
----
 
-2. Open the notebook
+3. Open the notebook : notebooks/cyclegan_monet_training.ipynb
 
-notebooks/cyclegan_monet_training.ipynb
+4. Train or generate images.
 
----
-
-3. Train or generate images.
-
-# Key Learning Outcomes
+## Key Learning Outcomes
 
 - Understanding Generative Adversarial Networks
 
@@ -108,15 +93,11 @@ notebooks/cyclegan_monet_training.ipynb
 
 - Applying deep learning to artistic style transfer
 
----
-
-# License
+## License
 
 This project is licensed under the MIT License.
 
----
-
-# References
+## References
 
 Goodfellow et al. – Generative Adversarial Nets (2014)
 
